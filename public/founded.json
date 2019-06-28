@@ -1,0 +1,17 @@
+{
+    "founded":
+            [
+                {
+                    "id":1,
+                    "name": "puszek"
+                },
+                {
+                    "id":2,
+                    "name": "misia"
+                },
+                {
+                    "id":3,
+                    "name": "kruszynka"
+                }
+    ]
+}
