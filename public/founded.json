@@ -3,15 +3,26 @@
             [
                 {
                     "id":1,
-                    "name": "puszek"
+                    "info": {  
+                        "name":"puszek",
+                        "age": 15
+                    }
+                    
+                    
                 },
                 {
                     "id":2,
-                    "name": "misia"
+                    "info": {  
+                        "name":"misia",
+                        "age": 3
+                    }
                 },
                 {
                     "id":3,
-                    "name": "kruszynka"
+                    "info": {  
+                        "name":"kruszynka",
+                        "age": 1
+                    }
                 }
     ]
 }

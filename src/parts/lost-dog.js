@@ -6,21 +6,40 @@ class LostDog extends Component {
         this.state = {
             loading:true
         }
+        this.baseUrl="http://localhost:3004/founded"
     }
-    componentDidMount(){
-        fetch(`http://localhost:3004/founded/${this.props.id}`)
+    componentDidMount(){       
+        this.loadDog();          
+    }
+    
+    loadDog() {
+        const id = this.props.match.params.id
+        fetch(`${this.baseUrl}/${id}`)
         .then(response =>{
             if (response.ok)
-                return response.json;
+                return response.json();
             else
-                return throw new Error("Błąd sieci")
-        })
+                throw new Error("Błąd sieci");
+        }).then(data=>{
+            this.setState({
+                loading: false,
+                data
+            });                                
+        }).catch(err => {
+            console.log("Błąd ładowania danych")
+        });
     }
+
+
     render() {
+        if (this.state.loading) return <h1>Ładuję dane</h1>
+        
         return (
-            <div>
-                
-            </div>
+            <ul>                
+               <li>Nr psa: {this.props.match.params.id}</li>
+               <li>Imię {this.state.data.info.name}</li>
+               <li>Wiek {this.state.data.info.age}</li>                
+            </ul>
         );
     }
 }

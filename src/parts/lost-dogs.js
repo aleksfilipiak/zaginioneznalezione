@@ -36,7 +36,7 @@ export default class LostDogs extends React.Component{
         const founded = this.state.data.map((dog) => {
             return(
                 <li key={dog.id}>
-                    <Link to={{pathname: `dog${dog.id}`}}><h3>{dog.name}</h3></Link>
+                    <Link to={{pathname: `founded/dog/${dog.id}`}}><h3>{dog.info.name}</h3></Link>
                 </li>
             )
         });
