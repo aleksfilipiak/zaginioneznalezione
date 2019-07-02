@@ -8,7 +8,10 @@ import Contact from './parts/contact';
 import Lost from './parts/lost';
 import LostDogsPage from './parts/lost-dogs-page';
 import LostDog from './parts/lost-dog';
-import Login from './parts/login';
+import Login from './parts/login-cookie';
+import { CookiesProvider } from 'react-cookie';
+import Registration from './parts/registration';
+
 
 import {
   HashRouter,
@@ -20,6 +23,7 @@ import {
 
 function App() {
   return (
+    <CookiesProvider>
     <HashRouter>
     <div className="App">
      <Header/>
@@ -28,10 +32,12 @@ function App() {
      <Route path="/lost" component={Lost}></Route>
      <Route path="/baza-znalezionych" component={LostDogsPage}></Route>
      <Route path="/founded/dog/:id" component={LostDog}></Route>
+     <Route path="/registration" component={Registration}/>
      <Route path="/login" component={Login}/>
      <Footer/>
     </div>
     </HashRouter>
+    </CookiesProvider>
   );
 }
 

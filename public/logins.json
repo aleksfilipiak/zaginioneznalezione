@@ -1,16 +1,22 @@
-{"logins":[
+{
+  "logins": [
     {
-        "id": 1,
-        "email": "blabla@qp.pl",
-        "pass":"hkhkhk",
-        "nick": "BlaGuest"
+      "id": 1,
+      "nick": "BlaGuest",
+      "email": "blabla@qp.pl",
+      "pass": "hkhkhk"
     },
     {
-        "id": 2,
-        "email": "bleble@qp.pl",
-        "pass":"asasasas",
-        "nick": "BlaBoss"
+      "id": 2,
+      "nick": "BlaBoss",
+      "email": "bleble@qp.pl",
+      "pass": "asasasas"
+    },
+    {
+      "newLogin": "bla",
+      "newEmail": "bla@bla.pl",
+      "newPass": "bla@bla.pl",
+      "id": 3
     }
-]
-
+  ]
 }
