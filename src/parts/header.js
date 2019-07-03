@@ -14,31 +14,37 @@ class MenuBtns extends React.Component{
     componentDidMount(){        
         const cookies = new Cookies();
         this.setState({
-            cookieLogin:cookies.get('login')
+            cookieLogin:cookies.get('login',{path: '/'})
         })
-     
+        
     }
 
+    logOut = ()=>{
+        const cookies = new Cookies();
+        cookies.remove('login', {path: '/'})
+        this.setState({
+            cookieLogin:''
+        })
+        window.location.reload();
+
+    }
     render(){
-    const menuBtnsNames = ['Znalezione', 'Zaginione', 'Skontaktuj'];
+    // const menuBtnsNames = ['Znalezione', 'Zaginione', 'Skontaktuj'];
+    // const menuBtns = menuBtnsNames.map((menuBtn,i) =>{
+    //     return <button key={i}>{menuBtn}</button>
+    // })
     
-    
-    const menuBtns = menuBtnsNames.map((menuBtn,i) =>{
-        return <button key={i}>{menuBtn}</button>
-    })
-
-    const registerBtn = <Link to='/registration'>Zarejestruj</Link>
-    const loginBtn = <Link to="/login">Zaloguj</Link>
-    
-
-    return (<div>
-        {menuBtns}
-        {this.state.cookieLogin === undefined ? <div>{registerBtn}{loginBtn}</div> : <p>Zalogowano {this.state.cookieLogin}</p>}
-       
-        </div>
-        )
-
-    
+        if (this.state.cookieLogin === undefined){
+            return(
+            <div>
+                <Link to='/registration'>Zarejestruj</Link>
+                <Link to="/login">Zaloguj</Link>
+            </div>
+            )
+        }
+        else{
+           return ( <div><p>Zalogowano {this.state.cookieLogin}</p><button onClick={this.logOut}>Wyloguj</button></div>)
+        }
     }
 }
 

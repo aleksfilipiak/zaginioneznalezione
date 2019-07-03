@@ -2,20 +2,20 @@
   "logins": [
     {
       "id": 1,
-      "nick": "BlaGuest",
+      "login": "BlaGuest",
       "email": "blabla@qp.pl",
       "pass": "hkhkhk"
     },
     {
       "id": 2,
-      "nick": "BlaBoss",
+      "login": "BlaBoss",
       "email": "bleble@qp.pl",
       "pass": "asasasas"
     },
     {
-      "newLogin": "bla",
-      "newEmail": "bla@bla.pl",
-      "newPass": "bla@bla.pl",
+      "login": "bla",
+      "email": "bla@bla.pl",
+      "pass": "ble",
       "id": 3
     }
   ]
