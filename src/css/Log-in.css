@@ -1,0 +1,41 @@
+.log-in{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 100px auto;
+    
+    align-items: center;
+}
+
+.log-in input{
+    width: 380px;
+    font-family: 'Courier New', Courier monospace;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.log-in input:focus{
+    outline: none;
+    
+}
+.log-in button{
+    width: 400px;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #9FEF00 ;
+}
+
+.log-in button:focus{
+    outline: none;
+}
+
+.errmsg{
+    background-color: #121A00;
+    margin: 0;
+    width: 400px;
+    text-align: center;
+    color: #DFFF9F;
+    height: 40px;
+    line-height: 40px;
+}

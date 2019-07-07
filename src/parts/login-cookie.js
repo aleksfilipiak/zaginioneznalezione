@@ -5,9 +5,10 @@ class LoginWithCookie extends Component {
     constructor (props){
         super(props);
         this.state={
-            login: "",
+            login:'',
+            email: "",
             pass:'',
-            cookieLogin:'',
+            cookieLoginEmail:'',
             wrongPass: false,
             noSuchUser: false
         };
@@ -30,11 +31,12 @@ class LoginWithCookie extends Component {
             this.setState({
                 data
             })
-            //checking is that login already in base
+            //checking is that email already in base
             const existingUserArr = this.state.data.filter((user)=>{
-                return (user.login === `${this.state.login}`) 
+                return (user.email === `${this.state.email}`) 
             })
-                  
+            
+            
             if(existingUserArr.length === 0)
                 {this.setState({
                     noSuchUser:true
@@ -43,7 +45,8 @@ class LoginWithCookie extends Component {
             else {
             const existingUser = existingUserArr[0]
             this.setState({
-                noSuchUser:false
+                noSuchUser:false,
+                login:existingUser.login
             })
            
             //checikng is pass fits to username
@@ -53,7 +56,8 @@ class LoginWithCookie extends Component {
                 })
             }else{    
                 const cookies = new Cookies();       
-                cookies.set('login', `${this.state.login}`, { path: '/' });
+                cookies.set('email', `${this.state.email}`, { path: '/' });
+                cookies.set('login', `${this.state.login}`, {path:'/'})
                 console.log(`hasło pasuje`)
                 window.location.replace(document.referrer);
             }
@@ -66,18 +70,19 @@ class LoginWithCookie extends Component {
     componentDidMount(){
         const cookies = new Cookies();
         this.setState({
+            cookieLoginEmail:cookies.get('email', {path: '/'}),
             cookieLogin:cookies.get('login', {path: '/'})
         });
-      
+      console.log(this.state.cookieLogin)
     }
     render() {
-                if(this.state.cookieLogin === undefined){
+                if(this.state.cookieLoginEmail === undefined && this.state.cookieLogin === undefined){
                     return (
-                        <div>                            
-                            <input onChange={this.changeHandler}  id="login" value={this.state.login} placeholder='Wpisz login lub email' required></input>
+                        <div className="log-in">                            
+                            <input onChange={this.changeHandler}  id="email" value={this.state.email} placeholder='Wpisz email' type='email' required></input>
                             <input onChange={this.changeHandler}  id="pass" value={this.state.pass} type='password' placeholder='Wpisz hasło' required></input>
-                            {this.state.noSuchUser && <p>Nie ma takiego użytkownika</p>}
-                            {this.state.wrongPass && <p>Nieprawidłowe hasło</p>}
+                            {this.state.noSuchUser && <p className="errmsg" >Nie ma takiego użytkownika</p>}
+                            {this.state.wrongPass && <p className="errmsg" >Nieprawidłowe hasło</p>}
                             <button type="submit" onClick={this.checkLogin}>Zaloguj</button>
                         </div>)
                 }

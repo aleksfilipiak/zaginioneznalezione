@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import Footer from './parts/footer';
 import Header from './parts/header';
 import Home from './parts/home';
@@ -11,6 +11,7 @@ import LostDog from './parts/lost-dog';
 import Login from './parts/login-cookie';
 import { CookiesProvider } from 'react-cookie';
 import Registration from './parts/registration';
+
 
 
 import {
