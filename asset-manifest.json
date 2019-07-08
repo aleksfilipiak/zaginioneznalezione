@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/zaginioneznalezione/static/css/main.79ced010.chunk.css",
-    "main.js": "/zaginioneznalezione/static/js/main.c13fa405.chunk.js",
-    "main.js.map": "/zaginioneznalezione/static/js/main.c13fa405.chunk.js.map",
+    "main.css": "/zaginioneznalezione/static/css/main.f5613c49.chunk.css",
+    "main.js": "/zaginioneznalezione/static/js/main.d416d874.chunk.js",
+    "main.js.map": "/zaginioneznalezione/static/js/main.d416d874.chunk.js.map",
     "runtime~main.js": "/zaginioneznalezione/static/js/runtime~main.236fe0f0.js",
     "runtime~main.js.map": "/zaginioneznalezione/static/js/runtime~main.236fe0f0.js.map",
     "static/js/2.050fade7.chunk.js": "/zaginioneznalezione/static/js/2.050fade7.chunk.js",
     "static/js/2.050fade7.chunk.js.map": "/zaginioneznalezione/static/js/2.050fade7.chunk.js.map",
     "index.html": "/zaginioneznalezione/index.html",
-    "precache-manifest.6067b4eea0c891260051b970d5c200a1.js": "/zaginioneznalezione/precache-manifest.6067b4eea0c891260051b970d5c200a1.js",
+    "precache-manifest.2d777a918feba6bf2faa1384f0aa63e4.js": "/zaginioneznalezione/precache-manifest.2d777a918feba6bf2faa1384f0aa63e4.js",
     "service-worker.js": "/zaginioneznalezione/service-worker.js",
-    "static/css/main.79ced010.chunk.css.map": "/zaginioneznalezione/static/css/main.79ced010.chunk.css.map",
+    "static/css/main.f5613c49.chunk.css.map": "/zaginioneznalezione/static/css/main.f5613c49.chunk.css.map",
     "static/media/logo.svg": "/zaginioneznalezione/static/media/logo.5d5d9eef.svg"
   }
 }
