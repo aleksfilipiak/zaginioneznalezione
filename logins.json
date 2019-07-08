@@ -1,0 +1,28 @@
+{
+  "logins": [
+    {
+      "id": 1,
+      "login": "BlaGuest",
+      "email": "blabla@qp.pl",
+      "pass": "hkhkhk"
+    },
+    {
+      "id": 2,
+      "login": "BlaBoss",
+      "email": "bleble@qp.pl",
+      "pass": "asasasas"
+    },
+    {
+      "login": "bla",
+      "email": "bla@bla.pl",
+      "pass": "ble",
+      "id": 3
+    },
+    {
+      "login": "",
+      "email": "",
+      "pass": "",
+      "id": 4
+    }
+  ]
+}

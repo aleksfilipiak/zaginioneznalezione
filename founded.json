@@ -1,0 +1,28 @@
+{
+    "founded":
+            [
+                {
+                    "id":1,
+                    "info": {  
+                        "name":"puszek",
+                        "age": 15
+                    }
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "info": {  
+                        "name":"misia",
+                        "age": 3
+                    }
+                },
+                {
+                    "id":3,
+                    "info": {  
+                        "name":"kruszynka",
+                        "age": 1
+                    }
+                }
+    ]
+}
