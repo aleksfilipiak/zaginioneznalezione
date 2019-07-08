@@ -17,6 +17,12 @@
       "email": "bla@bla.pl",
       "pass": "ble",
       "id": 3
+    },
+    {
+      "login": "",
+      "email": "",
+      "pass": "",
+      "id": 4
     }
   ]
 }

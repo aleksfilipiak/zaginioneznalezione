@@ -37,6 +37,7 @@ class MenuBtns extends React.Component{
         if (this.state.cookieLoginEmail === undefined){
             return(
             <div className='sign-btns'>
+                <Link to='/'>Główna</Link>                
                 <Link to='/registration'>Zarejestruj</Link>
                 <Link to="/login">Zaloguj</Link>
             </div>

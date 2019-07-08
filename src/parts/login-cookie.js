@@ -78,12 +78,13 @@ class LoginWithCookie extends Component {
     render() {
                 if(this.state.cookieLoginEmail === undefined && this.state.cookieLogin === undefined){
                     return (
-                        <div className="log-in">                            
-                            <input onChange={this.changeHandler}  id="email" value={this.state.email} placeholder='Wpisz email' type='email' required></input>
+                        <div className="log-in">
+                            <h1>zaloguj się</h1>                         
+                            <input onChange={this.changeHandler}  id="email" value={this.state.email} placeholder='Wpisz email' type='email' required ></input>
                             <input onChange={this.changeHandler}  id="pass" value={this.state.pass} type='password' placeholder='Wpisz hasło' required></input>
                             {this.state.noSuchUser && <p className="errmsg" >Nie ma takiego użytkownika</p>}
                             {this.state.wrongPass && <p className="errmsg" >Nieprawidłowe hasło</p>}
-                            <button type="submit" onClick={this.checkLogin}>Zaloguj</button>
+                            <button id="log-in-btn" type="submit" onClick={this.checkLogin}>Zaloguj</button>
                         </div>)
                 }
                  else{

@@ -43,14 +43,14 @@ class Registration extends Component {
 
     render() {
         return (
-            <form onSubmit={this.submitHandler} noValidate>
+            <form onSubmit={this.submitHandler} noValidate className='register-form'>
                 <h1>Zarejestruj się</h1>         
                 <p>Jeżeli chcesz dodać znalezione lub zaginione zwierzę, musisz mieć konto</p>                
                 <input id='newLogin' value={this.state.newLogin} onChange={this.changeHandler} placeholder="Login" type="text" required></input>
                 <input id='newEmail' value={this.state.newEmail} onChange={this.changeHandler} placeholder="Email" type="email" required></input>
                 <input id='newPass' value={this.state.newPass} onChange={this.changeHandler} placeholder="Hasło" type="password" required></input>
                 
-                <input type='submit' value="Załóż konto"></input>
+                <button type='submit'  id='sign-up-btn' >Załóż konto</button>
             </form>
         );
     }

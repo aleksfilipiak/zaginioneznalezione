@@ -1,4 +1,4 @@
-.log-in{
+.register-form{
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -7,18 +7,18 @@
     align-items: center;
     position: relative;
     padding: 40px 0;
-    ;
 }
 
-.log-in h1{
+.register-form h1{
     text-transform: uppercase;
     color: white;
     background-color: #FF7400;
     position: absolute;
     top:-57px;
+    padding: 0 15px;
 }
 
-.log-in input{
+.register-form input{
     width: 380px;
     font-family: 'Courier New', Courier monospace;
     height: 40px;
@@ -26,10 +26,11 @@
     text-align: center;
     font-size: 1.1rem;
 }
-.log-in input:focus{
+.register-form input:focus{
     outline: none;
 }
-#log-in-btn{
+
+#sign-up-btn{
     width: 400px;
     padding: 10px;
     font-size: 1.1rem;
@@ -41,7 +42,7 @@
     transition: all 0.2s ease-in;
 }
 
-#log-in-btn::before{
+#sign-up-btn::before{
     content: '';
     display: block;
     width: 0px;
@@ -55,19 +56,19 @@
     transform: skewX(-20deg);
 }
 
-#log-in-btn:active{
+#sign-up-btn:active{
     box-shadow: 0 0 0 0 transparent;
     transition: box-shadow 0.2s ease-in;
 }
 
-#log-in-btn:hover{
+#sign-up-btn:hover{
     color: white;
     box-shadow: 0 0 30px 0 transparentize(#1FC0C0, 0.5);
     background-color: #1FC0C0;
     transition: all 0.2s ease-out;
 }
 
-#log-in-btn:hover::before{
+#sign-up-btn::before{
     animation: shine 0.5s 0s linear;
 }
 
@@ -88,16 +89,3 @@
 
 /* end of shining effect settings */
 
-#log-in-btn:focus{
-    outline: none;
-}
-
-.errmsg{
-    background-color: #121A00;
-    margin: 0;
-    width: 400px;
-    text-align: center;
-    color: #DFFF9F;
-    height: 40px;
-    line-height: 40px;
-}
