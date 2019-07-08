@@ -4,8 +4,8 @@ import LostDogs from "./lost-dogs";
 class LostDogsPage extends Component {
     render() {
         return (
-            <div className='lost-dogs-page'>
-                <h1>Patrzysz na bazę znalezionych psów</h1>
+            <div className='dogs-page'>
+                <h1>Patrzysz na bazę zaginionych psów</h1>
                 <LostDogs/>
             </div>
         );

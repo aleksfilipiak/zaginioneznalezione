@@ -28,7 +28,7 @@ export default class Home extends React.Component{
             </div>
             <div className='main-btns-holder'>
                 <button id='btn-lost'><Link to='/lost'>Zgubiłam zwierzę</Link></button>
-                <button id='btn-found'><Link to='/founded'>Znalazłam zwierzę</Link></button>
+                <button id='btn-found'><Link to='/found'>Znalazłam zwierzę</Link></button>
             </div>
         </div>)
     }

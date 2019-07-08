@@ -1,27 +1,32 @@
-.lost-redirection{
+.what-to-do-info{
     width: 75%;
     margin: auto;
     text-align: center;
 }
 
-.shelter-redirect{
+.first-step{
     border: 10px dashed #E0248F;
     padding: 50px;
     margin: 100px 0;
     position: relative;
 }
-.shelter-redirect h1{
+
+.first-step h1{
     text-transform: uppercase;
     color: white;
     background-color: #FF7400;
     position: absolute;
-    top:-57px;
-    left: 297px;
     padding: 0 20px;
+    top:-57px;
+    /* individual set */
+    left: 394px;
 }
 
+.losted-step h1 {
+    left: 298px;
+}
 
-.found-base-redirect{
+.check-base-info{
     border: 10px dashed #E0248F;
     padding: 50px;
     padding-bottom: 160px;
@@ -29,7 +34,7 @@
     position: relative;
 }
 
-.found-base-redirect h1{
+.check-base-info h1{
     text-transform: uppercase;
     color: white;
     background-color: #FF7400;
