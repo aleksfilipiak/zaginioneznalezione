@@ -42,13 +42,11 @@ This app is runnig by react framework. It means, you can run it on your local se
 
 3. You need to install few additional packeges for this project. Enter in your terminal:
 
-`npm i react-router-dom`
+`npm install react`
 
-`npm i react-cookie`
+`npm install -g json`
 
-`universal-cookie-express`
-
-4. Now you should run two json servers, where app stores 2 databases:
+4. Now you should run two json servers, where app stores 2 databases. Run those lines in two new terminal windows and run them in folder *public* of this app:
 
 `json-server --watch founded.json --port 3004`
 
@@ -58,6 +56,8 @@ This app is runnig by react framework. It means, you can run it on your local se
 
 `npm start`
 
+Now you default browser should open this app on http://localhost:3000. Enjoy!
+
 ### 3 How does it work
 
 This app contains few nice functionalities:
@@ -65,11 +65,11 @@ This app contains few nice functionalities:
 - it uses cookies to provide account authentication
 - it supports REST API methods like GET, POST, PUT and DELETE
 
-When it comes to UX subject, the idea of this app was to create very simple tu use help system. It supposed to help confused people in case of doubts what to do, when they find/lost some pet. It guide user in 3 steps.
+When it comes to UX subject, the idea of this app was to create very simple tu use help system. It supposed to help confused people in case of doubts what to do, when they find/lost some pet. It guides user in 3 steps.
 
 ### 4 Next steps
 
-In very short time I planing to do:
+In very short time I plan to do:
 
 - [ ] Add entire "add new pet" form
 - [ ] Add validation to all input fields
