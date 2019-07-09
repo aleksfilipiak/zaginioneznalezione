@@ -12,7 +12,7 @@ class Registration extends Component {
 
     submitHandler =(e)=>{
         e.preventDefault();
-        this.baseUrl=`http://localhost:3005/logins`
+        this.baseUrl=`https://aleksfilipiak.github.io/zaginioneznalezione/logins.json`
         const newUser ={
             login:this.state.newLogin,
             email:this.state.newEmail,

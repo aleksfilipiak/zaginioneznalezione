@@ -12,7 +12,7 @@ class LoginWithCookie extends Component {
             wrongPass: false,
             noSuchUser: false
         };
-        this.baseUrl=`http://localhost:3005/logins`
+        this.baseUrl=`https://aleksfilipiak.github.io/zaginioneznalezione/logins.json`
     }
     changeHandler = (event)=>{
         this.setState({
@@ -32,7 +32,7 @@ class LoginWithCookie extends Component {
                 data
             })
             //checking is that email already in base
-            const existingUserArr = this.state.data.filter((user)=>{
+            const existingUserArr = this.state.data.logins.filter((user)=>{
                 return (user.email === `${this.state.email}`) 
             })
             
