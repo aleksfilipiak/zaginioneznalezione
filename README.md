@@ -35,8 +35,13 @@ This app is runnig by react framework. It means, you can run it on your local se
 
 2. You need to have installed Node.js and npm, which is very basic, but just in case you have neccesary things: 
 
-- install Node.js from its official site: [https://nodejs.org/en/](https://nodejs.org/en/)
-- intall npm (you can go to your local folder with cloned repo or do it globally) 
+- install Node.js from its official site: [https://nodejs.org/en/](https://nodejs.org/en/). At this moment recommended version is 10.16.0. After downloading its package wrote those lines in your terminal (if you have Ubuntu system):
+
+`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
+
+`sudo apt-get install -y nodejs`
+
+- install npm (you can go to your local folder with cloned repo or do it globally) 
 
 `npm install npm@latest -g`
 
