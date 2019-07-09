@@ -3,11 +3,11 @@
 ## App for easier reunion of lost animals with their keepers
 
 ## Docs and description (english):
-1. What is made for
-1. How to run app
-1. How it's work
-1. Next steps
-1. Dokumentacja i opisy (polish)
+1. [What is made for](https://github.com/aleksfilipiak/zaginioneznalezione#1-what-is-made-for)
+1. [How to run app](https://github.com/aleksfilipiak/zaginioneznalezione#2-how-to-run-app)
+1. [How it's work](https://github.com/aleksfilipiak/zaginioneznalezione#3-how-does-it-work)
+1. [Next steps](https://github.com/aleksfilipiak/zaginioneznalezione#4-next-steps)
+1. [Dokumentacja i opisy (polish)](https://github.com/aleksfilipiak/zaginioneznalezione#5-dokumentacja-i-opisy-in-polish)
 
 
 ### 1. What is made for
