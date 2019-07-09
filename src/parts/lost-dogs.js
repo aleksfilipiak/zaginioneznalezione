@@ -7,7 +7,7 @@ export default class LostDogs extends React.Component{
         this.state = {
             loading: true
         };
-        this.baseUrl = "http://localhost:3004/founded/"
+        this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/founded.json"
     }
     componentDidMount(){
         this.loadDogs()
@@ -17,7 +17,9 @@ export default class LostDogs extends React.Component{
         fetch(this.baseUrl)
         .then(response =>{
             if(response.ok)
+            {console.log(response)
                 return response.json();
+            }
             else
                 throw new Error ('Błąd sieci');
         }).then(data =>{
@@ -26,6 +28,7 @@ export default class LostDogs extends React.Component{
                 data
             })
         }).catch(err =>{
+            console.log(err);
             console.log("Błąd w przesyłaniu danych");
         })
     }   
@@ -33,7 +36,7 @@ export default class LostDogs extends React.Component{
 
         if (this.state.loading) return <h1>Ładuję dane</h1>
 
-        const founded = this.state.data.map((dog) => {
+        const founded = this.state.data.founded.map((dog) => {
             const photoIntoBckg = {
                 backgroundImage: `url(${dog.info.photo})`
             }
