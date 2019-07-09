@@ -22,7 +22,9 @@ class Registration extends Component {
             method: 'POST',
             body: JSON.stringify(newUser),
             headers:{
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST,GET,PUT,DELETE'
             }
         })
         .then(response=>{
