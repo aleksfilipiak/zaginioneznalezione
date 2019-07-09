@@ -10,6 +10,7 @@
 }
 .decor-border{
     border: 10px dashed #E0248F;
+    background-color: wheat;
 }
 .home h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

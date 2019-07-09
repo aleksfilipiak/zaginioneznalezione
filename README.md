@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Znalezione - zaginione app
 
-## Available Scripts
+## App for easier reunion of lost animals with their keepers
 
-In the project directory, you can run:
+## Docs and description (english):
+1. What is made for
+1. How to run app
+1. How it's work
+1. Next steps
+1. Dokumentacja i opisy (polish)
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1. What is made for
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+This project has two goals:
 
-### `npm test`
+**Being a part of my portfolio.**  I want to present my continously growing knowledge in bulding usefull apps. Thanks to that project I develope new skills everyday.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Is an attempt to resolve huge problem of lost pets in polish cities.**  Every month new quantity of lost pets reveals in social media. It's hard to find clear info of who, when and where spotted an runaway pet. With this app I'm trying to solve that problem.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. How to run app
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+#### You can try this app by visiting it on its project-website (runnig by github pages) here: [https://aleksfilipiak.github.io/zaginioneznalezione](https://aleksfilipiak.github.io/zaginioneznalezione/#/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Just please remember that is only static version of this app. That it means, you can't put new data into its database (ex. you can't register new user) or delete it.
 
-### `npm run eject`
+#### Running app locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This app is runnig by react framework. It means, you can run it on your local server (localhost). To try each of functionality of this app, you need to follow this steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone apps repo from github:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`git clone https://github.com/aleksfilipiak/zaginioneznalezione.git`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. You need to have installed Node.js and npm, which is very basic, but just in case you have neccesary things: 
 
-## Learn More
+- install Node.js from its official site: [https://nodejs.org/en/](https://nodejs.org/en/)
+- intall npm (you can go to your local folder with cloned repo or do it globally) 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm install npm@latest -g`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. You need to install few additional packeges for this project. Enter in your terminal:
 
-### Code Splitting
+`npm i react-router-dom`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+`npm i react-cookie`
 
-### Analyzing the Bundle Size
+`universal-cookie-express`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+4. Now you should run two json servers, where app stores 2 databases:
 
-### Making a Progressive Web App
+`json-server --watch founded.json --port 3004`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+`json-server --watch logins.json --port 3005`
 
-### Advanced Configuration
+5. Last step is to run this app by entering:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+`npm start`
 
-### Deployment
+### 3 How does it work
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This app contains few nice functionalities:
+- you can sing up by register your new account and then you can use login to add new lost/found pet
+- it uses cookies to provide account authentication
+- it supports REST API methods like GET, POST, PUT and DELETE
 
-### `npm run build` fails to minify
+When it comes to UX subject, the idea of this app was to create very simple tu use help system. It supposed to help confused people in case of doubts what to do, when they find/lost some pet. It guide user in 3 steps.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### 4 Next steps
+
+In very short time I planing to do:
+
+- [ ] Add entire "add new pet" form
+- [ ] Add validation to all input fields
+- [ ] Add more safe authentication
+- [ ] Add Google Maps API
+- [ ] Combine Google Maps API with geolocation of user
+
+
+### 5 Dokumentacja i opisy (in polish)
+
+To jutro

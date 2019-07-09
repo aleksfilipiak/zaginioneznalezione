@@ -25,6 +25,7 @@
     color: white;
     cursor: pointer;
     text-transform: capitalize;
+    text-align: left;
 }
 
 .dog-photo{

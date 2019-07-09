@@ -7,7 +7,8 @@ export default class FoundedDogs extends React.Component{
         this.state = {
             loading: true
         };
-        this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/founded.json"
+        // this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/founded.json"
+        this.baseUrl = "http://localhost:3004/founded/"
     }
     componentDidMount(){
         this.loadDogs()
@@ -37,7 +38,8 @@ export default class FoundedDogs extends React.Component{
 
         if (this.state.loading) return <h1>Ładuję dane</h1>
 
-        const founded = this.state.data.founded.map((dog) => {
+        // const founded = this.state.data.founded.map((dog) => {
+            const founded = this.state.data.map((dog) => {
             const photoIntoBckg = {
                 backgroundImage: `url(${dog.info.photo})`
             }

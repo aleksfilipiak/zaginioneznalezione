@@ -16,7 +16,7 @@ export default class Lost extends React.Component{
                 <div className="check-base-info">
                     <h1>Sprawdź bazę</h1>
                     <p>Nikt nie zawiózł tam Twojego psa? Rozejrzyj się po naszej bazie znalezionych psów. Szukaj zgłoszonych od daty zaginięcia Twojego psa</p>
-                    <button id='look-in-base'><Link to="/baza-znalezionych">Szukaj wśród znalezionych</Link></button>
+                    <button className='pop-btn'><Link to="/baza-znalezionych">Szukaj wśród znalezionych</Link></button>
                 </div>
             </div>
         )

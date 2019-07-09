@@ -12,7 +12,8 @@ class Registration extends Component {
 
     submitHandler =(e)=>{
         e.preventDefault();
-        this.baseUrl=`https://aleksfilipiak.github.io/zaginioneznalezione/logins.json`
+        // this.baseUrl=`https://aleksfilipiak.github.io/zaginioneznalezione/logins.json`
+        this.baseUrl='http://localhost:3005/logins'
         const newUser ={
             login:this.state.newLogin,
             email:this.state.newEmail,
@@ -22,9 +23,7 @@ class Registration extends Component {
             method: 'POST',
             body: JSON.stringify(newUser),
             headers:{
-                'Content-Type':'application/json',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'POST,GET,PUT,DELETE'
+                'Content-Type':'application/json'
             }
         })
         .then(response=>{

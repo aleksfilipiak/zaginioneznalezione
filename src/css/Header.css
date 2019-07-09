@@ -23,10 +23,11 @@
 
 .signed-msg p{
     margin:0 10px;
+    color: white;
 }
 
 .signed-msg button{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     background-color: transparent;
     margin: 0 10px;
     color: white;
