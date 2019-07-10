@@ -1,0 +1,35 @@
+.add-pet {
+    width: 75%;
+    margin: auto;    
+}
+
+.add-pet h1{
+    color: white;
+    text-align: center;
+}
+.add-pet form{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    border: 10px dashed #cf4675;
+    padding: 30px;
+}
+
+.add-pet input, .add-pet label{
+    margin-top: 10px;
+    /* border: 1px dotted green; */
+}
+
+.add-pet input{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    max-width: 50%;
+}
+
+.add-pet p{
+    width: 40%;
+}
+
+.add-pet label{
+    text-decoration: underline wavy #B0F528;
+}

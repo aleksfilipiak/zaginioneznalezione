@@ -13,6 +13,7 @@ import LostDog from './parts/lost-dog';
 import Login from './parts/login-cookie';
 import { CookiesProvider } from 'react-cookie';
 import Registration from './parts/registration';
+import AddPet from './parts/add-pet';
 
 
 
@@ -37,6 +38,7 @@ function App() {
      <Route path="/baza-znalezionych" component={FoundedDogsPage}></Route>
      <Route path="/baza-zaginionych" component={LostDogsPage}></Route>
      <Route path="/founded/dog/:id" component={LostDog}></Route>
+     <Route path="/dodaj" component={AddPet}></Route>
      <Route path="/registration" component={Registration}/>
      <Route path="/login" component={Login}/>
      <Footer/>

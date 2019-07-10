@@ -1,5 +1,7 @@
 .dogs-page{
     text-align: center;
+    color:white;
+    position: relative;
 }
 
 .dogs-page h1{
@@ -34,4 +36,11 @@
     background-size: cover;
     background-position: inherit;
     background-repeat: no-repeat;
+}
+
+
+#add-pet a{
+    height: 114px;
+    top:0;
+    right: 120px;
 }
