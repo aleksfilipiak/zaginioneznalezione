@@ -32,14 +32,13 @@
 }
 
 .contact-holder{
-    width: 100%;
+    width: 90%;
 }
 
 
 
 .add-pet input, .add-pet label, .add-pet div{
     margin-top: 10px;
-    border: 1px dotted green;
 }
 
 .add-pet input{
@@ -48,14 +47,28 @@
 }
 
 
-.add-pet label{
-    text-decoration: underline wavy #B0F528;
-}
-#add-photo{
+
+.add-photo{
     background-image: url('../images/camera-icon-cc0.png');
     height: 100px;
     width: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
+}
+
+#add-photo{
+    display: none;
+}
+
+label[for='add-photo']{
+    cursor: pointer;
+}
+
+.add-place-and-time{
+    height: 100px;
+}
+
+.basic-info label, .basic-info input{
+    display: inline-block;
 }

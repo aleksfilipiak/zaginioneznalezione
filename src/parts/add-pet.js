@@ -14,9 +14,9 @@ class AddPet extends Component {
                <h1>Dodaj zwierzę</h1> 
                <form>
                    <div className='add-photo-holder '>
-                        <label>Dodaj zdjęcie</label>
-                        <div id='add-photo'></div>
-                        <input name='add-photo' type='file' ></input><br/>
+                        <div className='add-photo'></div>
+                        <label for='add-photo'>Dodaj zdjęcie</label>
+                        <input name='add-photo' id='add-photo' type='file' ></input><br/>
                     </div>
                     <div className='info-holder'>
                         <div className='add-place-and-time'>
@@ -46,8 +46,8 @@ class AddPet extends Component {
                       <label>Forma kontaktu</label>
                         <input type='checkbox' name='contact' value='phone'/>Telefon
                         <input type='checkbox' name='contact' value='e-mail'/>E-mail<br/>
-                       <input name='submit' type='submit' value='Dodaj'></input>
                     </div>
+                    <input name='submit' type='submit' value='Dodaj'></input>
                </form>
             </div>
         );
