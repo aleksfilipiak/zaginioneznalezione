@@ -9,27 +9,53 @@
 }
 .add-pet form{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     background-color: wheat;
     border: 10px dashed #cf4675;
     padding: 30px;
 }
 
-.add-pet input, .add-pet label{
+.add-photo-holder{
+    width:35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-holder{
+    flex-grow:1;
+    
+}
+.add-place-and-time{
+    height: 10%;
+}
+
+.contact-holder{
+    width: 100%;
+}
+
+
+
+.add-pet input, .add-pet label, .add-pet div{
     margin-top: 10px;
-    /* border: 1px dotted green; */
+    border: 1px dotted green;
 }
 
 .add-pet input{
     font-size: 1.3rem;
     margin-bottom: 15px;
-    max-width: 50%;
 }
 
-.add-pet p{
-    width: 40%;
-}
 
 .add-pet label{
     text-decoration: underline wavy #B0F528;
+}
+#add-photo{
+    background-image: url('../images/camera-icon-cc0.png');
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
 }
