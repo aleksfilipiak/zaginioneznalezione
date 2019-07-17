@@ -47,6 +47,12 @@
       "email": "nowy1@nowy.pl",
       "pass": "nowy1@nowy.pl",
       "id": 8
+    },
+    {
+      "login": "w",
+      "email": "w@w",
+      "pass": "w@w",
+      "id": 9
     }
   ]
 }
