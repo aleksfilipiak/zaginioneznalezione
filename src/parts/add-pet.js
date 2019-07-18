@@ -23,7 +23,7 @@ class AddPet extends Component {
                             {this.state.lost ? <label>Czas zagubienia:</label> : <label>Czas znalezienia:</label>}
                             <input name='date' type='datetime-local'></input><br/>
                             <label>Miejsce</label>
-                            <input name='place' type='text'></input><br/>
+                            <input name='place' type='text'></input>
                         </div>
                         <div className='basic-info'>
                             <label>Podstawowe informacje o zwierzęciu:</label><br/>

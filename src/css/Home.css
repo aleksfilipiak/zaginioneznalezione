@@ -11,6 +11,7 @@
 .decor-border{
     border: 10px dashed #E0248F;
     background-color: wheat;
+    padding: 10px;
 }
 .home h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,3 +100,18 @@
     outline: none;
 }
 
+/*SMALL SIZE SCREEN*/
+
+@media (max-width: 550px){
+    .main-btns-holder button a{
+        width: 100px;
+        height: 75px;
+        padding-right: 33px;
+        margin-left:17px;
+        font-size:1.3rem;
+        line-height: 35px;
+    }
+    .main-btns-holder{
+        width: 360px;
+    }
+}

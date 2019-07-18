@@ -7,7 +7,6 @@
     align-items: center;
     position: relative;
     padding: 40px 0;
-    ;
 }
 
 .log-in h1{
@@ -100,4 +99,19 @@
     color: #DFFF9F;
     height: 40px;
     line-height: 40px;
+}
+
+
+/*SMALL SCREEN*/
+@media(max-width: 575px){
+
+.log-in input{
+    width: 200px;
+}
+#log-in-btn{
+    width: 220px;
+}
+.log-in h1{
+    text-align: center;
+}
 }

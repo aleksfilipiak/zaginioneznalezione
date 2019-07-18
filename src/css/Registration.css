@@ -6,7 +6,8 @@
     border: 10px dashed #E0248F;
     align-items: center;
     position: relative;
-    padding: 40px 0;
+    padding: 40px 10px;
+    text-align: center;
 }
 
 .register-form h1{
@@ -89,3 +90,16 @@
 
 /* end of shining effect settings */
 
+/*SMALL SCREEN*/
+@media(max-width: 575px){
+
+    .log-in input{
+        width: 200px;
+    }
+    #log-in-btn{
+        width: 220px;
+    }
+    .log-in h1{
+        text-align: center;
+    }
+    }
