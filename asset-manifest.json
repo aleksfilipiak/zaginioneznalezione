@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/zaginioneznalezione/static/css/main.b25df151.chunk.css",
+    "main.css": "/zaginioneznalezione/static/css/main.6a48d018.chunk.css",
     "main.js": "/zaginioneznalezione/static/js/main.104ca846.chunk.js",
     "main.js.map": "/zaginioneznalezione/static/js/main.104ca846.chunk.js.map",
     "runtime~main.js": "/zaginioneznalezione/static/js/runtime~main.236fe0f0.js",
@@ -8,9 +8,9 @@
     "static/js/2.64ac9354.chunk.js": "/zaginioneznalezione/static/js/2.64ac9354.chunk.js",
     "static/js/2.64ac9354.chunk.js.map": "/zaginioneznalezione/static/js/2.64ac9354.chunk.js.map",
     "index.html": "/zaginioneznalezione/index.html",
-    "precache-manifest.066ab4f4e910a021d832853858cdd9bd.js": "/zaginioneznalezione/precache-manifest.066ab4f4e910a021d832853858cdd9bd.js",
+    "precache-manifest.eca6718e70955b4db40091e6f8744fba.js": "/zaginioneznalezione/precache-manifest.eca6718e70955b4db40091e6f8744fba.js",
     "service-worker.js": "/zaginioneznalezione/service-worker.js",
-    "static/css/main.b25df151.chunk.css.map": "/zaginioneznalezione/static/css/main.b25df151.chunk.css.map",
+    "static/css/main.6a48d018.chunk.css.map": "/zaginioneznalezione/static/css/main.6a48d018.chunk.css.map",
     "static/media/App.css": "/zaginioneznalezione/static/media/camera-icon-cc0.5988b8c7.png",
     "static/media/logo.svg": "/zaginioneznalezione/static/media/logo.5d5d9eef.svg"
   }
