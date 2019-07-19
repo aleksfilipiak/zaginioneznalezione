@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zaginioneznalezione/precache-manifest.eca6718e70955b4db40091e6f8744fba.js"
+  "/zaginioneznalezione/precache-manifest.ae4d4c51510eca7b6b62ac46ef24f0d3.js"
 );
 
 self.addEventListener('message', (event) => {
