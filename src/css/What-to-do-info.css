@@ -18,35 +18,17 @@
     background-color: wheat;
     position: absolute;
     padding: 6px 20px;
-    top:-66px;
+    top:-40px;
     border-radius:16px;
-    /* individual set */
-    left: 394px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width: fit-content;
+}
+.extra-padding{
+    padding-bottom: 120px;
 }
 
-.losted-step h1 {
-    left: 298px;
-}
-
-.check-base-info{
-    border: 10px dashed #E0248F;
-    padding: 50px;
-    padding-bottom: 160px;
-    margin-bottom: 100px;
-    position: relative;
-    background-color: wheat;
-}
-
-.check-base-info h1{
-    text-transform: uppercase;
-    color: #e1528f;
-    background-color: wheat;
-    position: absolute;
-    top:-66px;
-    padding: 6px 17px;
-    left:382px;
-    border-radius:16px;
-}
 
 .pop-btn {
     padding:0 !important;
@@ -62,13 +44,15 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700 !important;
-    color: bisque;
+    color: white;;
     line-height: 38px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 
     /* 3d effect */
     position:absolute;
     transition: all .3s;
-    left: 435px;
     
 }
 
@@ -95,8 +79,8 @@
 	background-color: #085151;
 }
 .pop-btn a:active{
-    margin-left: 20px;
-	margin-top: 10px;
+    margin-top: 10px;
+    transform: translateX(20px);
 }
 .pop-btn a:active::before{
     bottom: -5px;
@@ -110,4 +94,22 @@
 }
 .pop-btn a:focus{
     outline: none;
+}
+
+@media(max-width:470px){
+    .what-to-do-info{
+        width: 90%;
+    }
+    .first-step h1{
+        font-size: 1.4em;
+        top:-37px;
+    }
+    .first-step{
+        padding:10px;
+        padding-top: 30px;
+    }
+
+    .extra-padding{
+        padding-bottom: 120px;
+    }
 }

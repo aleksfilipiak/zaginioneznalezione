@@ -2,6 +2,8 @@
     text-align: center;
     color:white;
     position: relative;
+    width: 90%;
+    margin:auto;
 }
 
 .dogs-page h1{
@@ -18,8 +20,9 @@
 }
 
 .dogs-list li{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 30%;
+    padding:0;
 }
 
 .dogs-list li a{
@@ -42,5 +45,34 @@
 #add-pet a{
     height: 114px;
     top:0;
-    right: 120px;
+    
+}
+
+@media(min-width:1350px){
+    #add-pet a{
+        right: 0;
+        left: inherit;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:1350px){
+    .dogs-page p {
+        margin-bottom:200px;
+    }
+    #add-pet a{
+        top:175px;
+    }
+}
+
+@media(max-width:990px){
+    .dogs-list li{
+        width:50%;
+    }   
+}
+
+@media(max-width:610px){
+    .dogs-list li{
+        width:100%;
+    }   
 }

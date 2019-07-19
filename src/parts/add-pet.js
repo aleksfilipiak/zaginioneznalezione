@@ -8,7 +8,11 @@ class AddPet extends Component {
         }
         
     }
+
+   
+
     render() {
+        const windowWidth = window.innerWidth;
         return (
             <div className='add-pet'>                
                <h1>Dodaj zwierzę</h1> 
@@ -26,20 +30,32 @@ class AddPet extends Component {
                             <input name='place' type='text'></input>
                         </div>
                         <div className='basic-info'>
-                            <label>Podstawowe informacje o zwierzęciu:</label><br/>
-                            <label>Imię:</label>
-                            <input type='checkbox' name='name' value='unknown'/>Nie znam <span>lub</span>
-                            <input type='text' name='name' placeholder='Wpisz imię'></input><br/>
-                            <label>Wzrost:</label>
-                            <input type='radio' name='size'/>Do 30cm
-                            <input type='radio' name='size' />Między 30cm a 70cm
-                            <input type='radio' name='size' />Powyżej 70cm<br/>
-                            <label>Płeć:</label>
-                            <input type='radio' name='gender' value='unknown'/>Nie znam
-                            <input type='radio' name='gender' value='male'/>Samiec
-                            <input type='radio' name='gender' value='female'/>Samica<br/>
-                            <label>Dodatkowe informacje</label><br/>
-                            <textarea name='more-info' placeholder='Jak wyglądało zdarzenie, co zwierzę miało przy sobie, jak się zachowywało...'></textarea><br/>
+                            <p>Podstawowe informacje o zwierzęciu:</p>
+                                <label>Imię:
+                                {windowWidth < 680 ? <br/> : undefined}
+                                <input type='checkbox' name='name' value='unknown'/>Nie znam <span>lub</span>
+                                {windowWidth < 680 ? <br/> : undefined}
+                                <input type='text' name='name' placeholder='Wpisz imię'></input><br/>
+                            </label>
+                            <label>Wzrost:
+                            {windowWidth < 680 ? <br/> : undefined}
+                                <input type='radio' name='size'/>Do 30cm
+                                {windowWidth < 680 ? <br/> : undefined}
+                                <input type='radio' name='size' />Między 30cm a 70cm
+                                {windowWidth < 680 ? <br/> : undefined}
+                                <input type='radio' name='size' />Powyżej 70cm<br/>
+                            </label>
+                            <label>Płeć:
+                            {windowWidth < 680 ? <br/> : undefined}
+                                <input type='radio' name='gender' value='unknown'/>Nie znam
+                                {windowWidth < 680 ? <br/> : undefined}
+                                <input type='radio' name='gender' value='male'/>Samiec
+                                {windowWidth < 680 ? <br/> : undefined}
+                                <input type='radio' name='gender' value='female'/>Samica<br/>
+                            </label>
+                            <label>Dodatkowe informacje:
+                                <textarea name='more-info' wrap='off' cols={30} rows={10} placeholder='Jak wyglądało zdarzenie, co zwierzę miało przy sobie, jak się zachowywało...'></textarea><br/>
+                            </label>
                         </div>
                     </div>
                     <div className='contact-holder col-12'>

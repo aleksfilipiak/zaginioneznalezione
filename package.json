@@ -9,6 +9,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "typescript": "^3.5.3",
     "universal-cookie-express": "^4.0.0"
   },
   "scripts": {
@@ -34,7 +35,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://aleksfilipiak.github.io/zaginioneznalezione"
-  
-  
+  "homepage": "https://aleksfilipiak.github.io/zaginioneznalezione",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
+  }
 }

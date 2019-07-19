@@ -38,9 +38,11 @@
     background-color: #1FC0C0 ;
     cursor: pointer;
     /* shining effect */
+    margin:0 auto;
     position: relative;
     box-shadow: 0 0 0 0 transparent;
     transition: all 0.2s ease-in;
+    
 }
 
 #sign-up-btn::before{
@@ -93,13 +95,16 @@
 /*SMALL SCREEN*/
 @media(max-width: 575px){
 
-    .log-in input{
-        width: 200px;
+    .register-form input{
+        width: 240px;
     }
-    #log-in-btn{
-        width: 220px;
+    #sign-up-btn{
+        width: 260px;
     }
-    .log-in h1{
+    .register-form h1{
         text-align: center;
+        font-size: 1.7em;
+        padding:0;
+        top: -50px;
     }
     }
