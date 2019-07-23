@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec5344097abba4edd5c6a4de5e4e4777",
+    "revision": "e083b82aacc39d5ff9bfc2eafcddaa3e",
     "url": "/zaginioneznalezione/index.html"
   },
   {
-    "revision": "7459e6801c2c6140f68c",
-    "url": "/zaginioneznalezione/static/css/main.f09d267f.chunk.css"
+    "revision": "e21128ec84935ee65523",
+    "url": "/zaginioneznalezione/static/css/main.e42151fe.chunk.css"
   },
   {
-    "revision": "38ac2b688511053cbd83",
-    "url": "/zaginioneznalezione/static/js/2.64ac9354.chunk.js"
+    "revision": "7376a9cba4e7c3ab5365",
+    "url": "/zaginioneznalezione/static/js/2.20712967.chunk.js"
   },
   {
-    "revision": "7459e6801c2c6140f68c",
-    "url": "/zaginioneznalezione/static/js/main.bca6488f.chunk.js"
+    "revision": "e21128ec84935ee65523",
+    "url": "/zaginioneznalezione/static/js/main.87921f70.chunk.js"
   },
   {
     "revision": "71e8356e78673cde1ed0",
@@ -26,5 +26,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/zaginioneznalezione/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "4e991b09ee8710282c048678302b473a",
+    "url": "/zaginioneznalezione/static/media/target.4e991b09.png"
   }
 ]);
