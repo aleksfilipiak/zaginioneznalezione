@@ -131,5 +131,5 @@ W najbliższej przyszłości aplikacja będzie uzupełniona o:
 - [ ] formularz dodawania zwierząt do bazy znalezionych i zaginionych
 - [ ] walidację wszystkich pól typu input
 - [ ] dodanie bezpieczniejszej autoryzacji
-- [ ] dodanie API od Google Maps
-- [ ] połączenie API od Google Maps z lokalizacją użytkownika
+- [x] dodanie API OpenStreetMap
+- [x] połączenie API od OpenStreetMap z lokalizacją użytkownika

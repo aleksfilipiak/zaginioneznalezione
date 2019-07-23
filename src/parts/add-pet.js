@@ -1,18 +1,44 @@
 import React, { Component } from 'react';
+import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
 
 class AddPet extends Component {
     constructor(props){
         super(props)
         this.state={
-            lost:true
+            lost:true,
+            hasLocation: false,
+            latlng:{
+                lat: 52.405073,
+                lng: 17.052509
+            },  
+            zoom: 13          
         }
-        
+        this.mapRef = React.createRef();
     }
+    // mapRef = createRef<Map>()
 
+    handleClick = () => {
+      const map = this.mapRef.current
+      if (map != null) {
+        map.leafletElement.locate()
+      }
+    }
+  
+    handleLocationFound = (e) => {
+      this.setState({
+        hasLocation: true,
+        latlng: e.latlng
+      })
+    }
    
 
     render() {
         const windowWidth = window.innerWidth;
+        const marker = this.state.hasLocation ? (
+            <Marker position={this.state.latlng}>
+              <Popup>You are here</Popup>
+            </Marker>
+          ) : null
         return (
             <div className='add-pet'>                
                <h1>Dodaj zwierzę</h1> 
@@ -28,6 +54,27 @@ class AddPet extends Component {
                             <input name='date' type='datetime-local'></input><br/>
                             <label>Miejsce</label>
                             <input name='place' type='text'></input>
+                            {/* Gap for map */}
+                            <div id='map'> 
+                                <Map center={this.state.latlng} 
+                                    length={4}
+                                    onClick={this.handleClick}
+                                    ref={this.mapRef}
+                                    zoom={13}
+                                    style={{height:190}}
+                                    onLocationfound={(e) => this.handleLocationFound(e)}
+                                    onClick={this.handleClick} >
+                                    <TileLayer
+                                        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                                        />
+                                    {marker}       
+                                    <button className="leaflet-bottom leaflet-right"
+                                    ></button>                             
+                                </Map>
+
+                            </div>
+
                         </div>
                         <div className='basic-info'>
                             <p>Podstawowe informacje o zwierzęciu:</p>

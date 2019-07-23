@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "json-server": "^0.15.0",
+    "leaflet": "^1.5.1",
     "react": "^16.8.6",
     "react-cookie": "^4.0.0",
     "react-dom": "^16.8.6",
+    "react-leaflet": "^2.4.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "typescript": "^3.5.3",
@@ -37,6 +39,7 @@
   },
   "homepage": "https://aleksfilipiak.github.io/zaginioneznalezione",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0"
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "gh-pages": "^2.0.1"
   }
 }
