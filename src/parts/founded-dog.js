@@ -37,8 +37,8 @@ class FoundedDog extends Component {
         return (
             <ul>                
                <li>Nr psa: {this.props.match.params.id}</li>
-               <li>Imię {this.state.data.info.name}</li>
-               <li>Wiek {this.state.data.info.age}</li>                
+               <li>Imię {this.state.data.name}</li>
+               <li>Wiek {this.state.data.age}</li>                
             </ul>
         );
     }

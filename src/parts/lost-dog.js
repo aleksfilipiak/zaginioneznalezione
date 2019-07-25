@@ -33,13 +33,18 @@ class LostDog extends Component {
 
     render() {
         if (this.state.loading) return <h1>Ładuję dane</h1>
-        
+        const photoIntoBckg = {
+            backgroundImage: `url(${this.state.data.photo})`
+        }
         return (
-            <ul>                
-               <li>Nr psa: {this.props.match.params.id}</li>
-               <li>Imię {this.state.data.info.name}</li>
-               <li>Wiek {this.state.data.info.age}</li>                
+            <div className="show-pet">
+            <ul> 
+                <li style={photoIntoBckg} className='pet-photo'></li>               
+               <li>Nr zwierzęcia: {this.props.match.params.id}</li>
+               <li>Imię {this.state.data.name}</li>
+               <li>Wiek {this.state.data.age}</li>                
             </ul>
+            </div>
         );
     }
 }

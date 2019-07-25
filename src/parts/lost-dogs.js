@@ -40,12 +40,12 @@ export default class LostDogs extends React.Component{
         // const founded = this.state.data.founded.map((dog) => {
             const founded = this.state.data.map((dog) => {
             const photoIntoBckg = {
-                backgroundImage: `url(${dog.info.photo})`
+                backgroundImage: `url(${dog.photo})`
             }
             return(
                 <li key={dog.id}>
                     <Link to={{pathname: `founded/dog/${dog.id}`}}>
-                        <h3>{dog.info.name}</h3>
+                        {dog.name === 'unknown' ? <h3>Pies nr {dog.id}</h3> : <h3>{dog.name}</h3>}
                         <div className="dog-photo" style={photoIntoBckg}></div>
                     </Link>
                 </li>

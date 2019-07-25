@@ -1,0 +1,20 @@
+
+.show-pet{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    width: 75%;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li.pet-photo{
+    width: 50px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+
+}
