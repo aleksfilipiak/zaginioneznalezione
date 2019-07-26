@@ -1,129 +1,156 @@
 {
-    "founded":
-            [
-                {
-                    "id":1,
-                    "info": {  
-                        "author": "magda",
-                        "name":"puszek",
-                        "age": 15,
-                        "sex": "male",
-                        "added": "21.06.2019",
-                        "added-hour":"20:59",
-                        "founded": "21.06.2019",
-                        "at-hour": "20:42",
-                        "where-lat": "",
-                        "where-lang": "",
-                        "stays": "u mamy",
-                        "contact": [
-                            "email","phone"
-                        ],
-                        "photo": "https://cdn.pixabay.com/photo/2015/04/22/12/23/dog-734688_960_720.jpg"
-                    }
-                    
-                    
-                },
-                {
-                    "id":2,
-                    "info": {  
-                        "author": "konrad",
-                        "name":"misia",
-                        "age": 3,
-                        "sex": "female",
-                        "added": "22.06.2019",
-                        "added-hour":"20:00",
-                        "founded": "21.06.2019",
-                        "at-hour": "21:24",
-                        "where-lat": "",
-                        "where-lang": "",
-                        "stays": "bukowska",
-                        "contact": [
-                            "email"
-                        ],
-                        "photo": "https://cdn.pixabay.com/photo/2015/05/30/14/27/yorkshire-terrier-790361_960_720.jpg"
-                    }
-                },
-                {
-                    "id":3,
-                    "info": {  
-                        "author": "aśka",
-                        "name":"kruszynka",
-                        "age": 1,
-                        "sex": "female",
-                        "added": "23.06.2019",
-                        "added-hour":"20:00",
-                        "founded": "21.06.2019",
-                        "at-hour": "20:24",
-                        "where-lat": "",
-                        "where-lang": "",
-                        "stays": "kostrzyn",
-                        "contact": [
-                            "email"
-                        ],
-                        "photo": "https://cdn.pixabay.com/photo/2016/12/02/06/36/republic-of-korea-1877033_960_720.jpg"
-                    }
-                },
-                {
-                    "id":4,
-                    "info": {  
-                        "author": "magda",
-                        "name":"puszek",
-                        "age": 15,
-                        "sex": "male",
-                        "added": "21.06.2019",
-                        "added-hour":"20:59",
-                        "founded": "21.06.2019",
-                        "at-hour": "20:42",
-                        "where-lat": "",
-                        "where-lang": "",
-                        "stays": "u mamy",
-                        "contact": [
-                            "email","phone"
-                        ],
-                        "photo": "https://cdn.pixabay.com/photo/2015/04/22/12/23/dog-734688_960_720.jpg"
-                    }
-                    
-                    
-                },
-                {
-                    "id":5,
-                    "info": {  
-                        "author": "konrad",
-                        "name":"misia",
-                        "age": 3,
-                        "sex": "female",
-                        "added": "22.06.2019",
-                        "added-hour":"20:00",
-                        "founded": "21.06.2019",
-                        "at-hour": "21:24",
-                        "where-lat": "",
-                        "where-lang": "",
-                        "stays": "bukowska",
-                        "contact": [
-                            "email"
-                        ],
-                        "photo": "https://cdn.pixabay.com/photo/2015/05/30/14/27/yorkshire-terrier-790361_960_720.jpg"
-                    }
-                },
-                {
-                    "id":6,
-                    "info": {  
-                        "author": "aśka",
-                        "name":"kruszynka",
-                        "age": 1,
-                        "sex": "female",
-                        "added": "23.06.2019",
-                        "added-hour":"20:00",
-                        "founded": "21.06.2019",
-                        "at-hour": "20:24",
-                        "where-lat": "",
-                        "where-lang": "",
-                        "stays": "kostrzyn",
-                        "contact": [
-                            "email"
-                        ],
-                        "photo": "https://cdn.pixabay.com/photo/2016/12/02/06/36/republic-of-korea-1877033_960_720.jpg"
-                    }
-                }
-    ]
+  "founded": [
+    {
+      "id": 1,
+        "author": "magda",
+        "name": "puszek",
+        "age": 15,
+        "sex": "male",
+        "added": "21.06.2019",
+        "added-hour": "20:59",
+        "founded": "21.06.2019",
+        "at-hour": "20:42",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
+        "where-lat": "",
+        "where-lang": "",
+        "stays": "u mamy",
+        "contact": [
+          "email",
+          "phone"
+        ],
+        "photo": "https://cdn.pixabay.com/photo/2015/04/22/12/23/dog-734688_960_720.jpg"
+    },
+    {
+      "id": 2,
+        "author": "konrad",
+        "name": "misia",
+        "age": 3,
+        "sex": "female",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
+        "added": "22.06.2019",
+        "added-hour": "20:00",
+        "founded": "21.06.2019",
+        "at-hour": "21:24",
+        "where-lat": "",
+        "where-lang": "",
+        "stays": "bukowska",
+        "contact": [
+          "email"
+        ],
+        "photo": "https://cdn.pixabay.com/photo/2015/05/30/14/27/yorkshire-terrier-790361_960_720.jpg"
+    },
+    {
+      "id": 3,
+        "author": "aśka",
+        "name": "kruszynka",
+        "age": 1,
+        "sex": "female",
+        "added": "23.06.2019",
+        "added-hour": "20:00",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
+        "founded": "21.06.2019",
+        "at-hour": "20:24",
+        "where-lat": "",
+        "where-lang": "",
+        "stays": "kostrzyn",
+        "contact": [
+          "email"
+        ],
+        "photo": "https://cdn.pixabay.com/photo/2016/12/02/06/36/republic-of-korea-1877033_960_720.jpg"
+    },
+    {
+      "id": 4,
+        "author": "magda",
+        "name": "puszek",
+        "age": 15,
+        "sex": "male",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
+        "added": "21.06.2019",
+        "added-hour": "20:59",
+        "founded": "21.06.2019",
+        "time": "2019-07-25T13:00",
+        "at-hour": "20:42",
+        "where-lat": "",
+        "where-lang": "",
+        "stays": "u mamy",
+        "contact": [
+          "email",
+          "phone"
+        ],
+        "photo": "https://cdn.pixabay.com/photo/2015/04/22/12/23/dog-734688_960_720.jpg"
+    },
+    {
+      "id": 5,
+        "author": "konrad",
+        "name": "misia",
+        "age": 3,
+        "sex": "female",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
+        "added": "22.06.2019",
+        "added-hour": "20:00",
+        "founded": "21.06.2019",
+        "at-hour": "21:24",
+        "where-lat": "",
+        "where-lang": "",
+        "stays": "bukowska",
+        "contact": [
+          "email"
+        ],
+        "photo": "https://cdn.pixabay.com/photo/2015/05/30/14/27/yorkshire-terrier-790361_960_720.jpg"
+    },
+    {
+      "id": 6,
+        "author": "aśka",
+        "name": "kruszynka",
+        "age": 1,
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
+        "sex": "female",
+        "added": "23.06.2019",
+        "added-hour": "20:00",
+        "founded": "21.06.2019",
+        "at-hour": "20:24",
+        "where-lat": "",
+        "where-lang": "",
+        "stays": "kostrzyn",
+        "contact": [
+          "email"
+        ],
+        "photo": "https://cdn.pixabay.com/photo/2016/12/02/06/36/republic-of-korea-1877033_960_720.jpg"
+    },
+    {
+      "id": 7,
+      "lost": true,
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
+        "time": "2019-07-25T13:00",
+        "name": "unknown",
+        "height": "small",
+        "sex": "unknown",
+        "extraInfo": "gruby kotek",
+        "age": "unknown",
+        "email": "fghg",
+        "phone": "45645",
+        "photo": "https://royalcanin.pl/blog/wp-content/uploads/2016/12/231W-2-950x680.jpeg"
+      }
+  ]
 }
