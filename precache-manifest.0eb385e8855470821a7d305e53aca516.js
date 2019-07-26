@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f455e805eb2b3c1905343b8465be84e8",
+    "revision": "e11a8349bf0fd6b20c2e9aabb5b8e1c5",
     "url": "/zaginioneznalezione/index.html"
   },
   {
-    "revision": "1b4f9740886179473c52",
+    "revision": "c44f8580a1b8cc76486d",
     "url": "/zaginioneznalezione/static/css/main.3b397196.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zaginioneznalezione/static/js/2.96811079.chunk.js"
   },
   {
-    "revision": "1b4f9740886179473c52",
-    "url": "/zaginioneznalezione/static/js/main.c48f2a31.chunk.js"
+    "revision": "c44f8580a1b8cc76486d",
+    "url": "/zaginioneznalezione/static/js/main.8edff0df.chunk.js"
   },
   {
     "revision": "71e8356e78673cde1ed0",
