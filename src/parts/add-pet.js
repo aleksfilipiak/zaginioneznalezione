@@ -92,6 +92,7 @@ class AddPet extends Component {
         const example = {
             id: 0,
             lostOrFound: '',
+            adopted: false,
             owner: this.state.owner,
             info:{            
             latlng:{

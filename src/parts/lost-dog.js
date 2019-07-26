@@ -40,10 +40,23 @@ class LostDog extends Component {
     //     }
     // }
 
-    rescued(){
-       
-
-      console.log('uratowane')
+    rescued = ()=>{
+        const id = this.props.match.params.id
+        fetch(`${this.baseUrl}/${id}`,{
+            method: 'PATCH',
+            body: JSON.stringify({adopted:true}),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(res => {
+            if (res.ok)
+                return res.json();
+            else
+                throw new Error ('błąd POST');
+        })
+        .then(()=>console.log('post klika'))
+        .catch(err => console.log(err));
 
     }
 
