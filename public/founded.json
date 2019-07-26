@@ -10,6 +10,10 @@
         "added-hour": "20:59",
         "founded": "21.06.2019",
         "at-hour": "20:42",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
         "where-lat": "",
         "where-lang": "",
         "stays": "u mamy",
@@ -25,6 +29,10 @@
         "name": "misia",
         "age": 3,
         "sex": "female",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
         "added": "22.06.2019",
         "added-hour": "20:00",
         "founded": "21.06.2019",
@@ -45,6 +53,10 @@
         "sex": "female",
         "added": "23.06.2019",
         "added-hour": "20:00",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
         "founded": "21.06.2019",
         "at-hour": "20:24",
         "where-lat": "",
@@ -61,9 +73,14 @@
         "name": "puszek",
         "age": 15,
         "sex": "male",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
         "added": "21.06.2019",
         "added-hour": "20:59",
         "founded": "21.06.2019",
+        "time": "2019-07-25T13:00",
         "at-hour": "20:42",
         "where-lat": "",
         "where-lang": "",
@@ -80,6 +97,10 @@
         "name": "misia",
         "age": 3,
         "sex": "female",
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
         "added": "22.06.2019",
         "added-hour": "20:00",
         "founded": "21.06.2019",
@@ -97,6 +118,10 @@
         "author": "aśka",
         "name": "kruszynka",
         "age": 1,
+        "latlng": {
+          "lat": 52.4002888,
+          "lng": 17.060211499999998
+        },
         "sex": "female",
         "added": "23.06.2019",
         "added-hour": "20:00",

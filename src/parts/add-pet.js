@@ -5,7 +5,8 @@ class AddPet extends Component {
     constructor(props){
         super(props)
         this.state={
-            lost:true,
+            lostOrFound: '',
+            owner: 'unknown',
             hasLocation: false,
             latlng:{
                 lat: 52.405073,
@@ -14,6 +15,7 @@ class AddPet extends Component {
             zoom: 13,
             time: '',
             nameVal: '',
+            age: '',
             switchCheck: false,
             selectedSizeOption:'',
             extraInfo: '',
@@ -89,7 +91,8 @@ class AddPet extends Component {
         this.baseUrl = 'http://localhost:3004/founded'
         const example = {
             id: 0,
-            lost:true,
+            lostOrFound: '',
+            owner: this.state.owner,
             info:{            
             latlng:{
                 lat: this.state.latlng.lat,
@@ -97,6 +100,7 @@ class AddPet extends Component {
             },
             time: this.state.time,
             name: this.state.switchCheck ? 'unknown' : this.state.nameVal,
+            age: this.state.age,
             height: this.state.selectedSizeOption,
             sex: this.state.selectedGenderOption,
             extraInfo: this.state.extraInfo,
@@ -139,7 +143,7 @@ class AddPet extends Component {
                <form>
                    <div className='add-photo-holder '>
                         <div className='add-photo'></div>
-                        <label for='add-photo'>Dodaj zdjęcie</label>
+                        <label htmlFor='add-photo'>Dodaj zdjęcie</label>
                         {/* <input name='add-photo' id='add-photo' type='file' ></input><br/> */}
                         <input name='add-photo' id='add-photo' type='text' onClick={this.insteadPhoto} ></input><br/>
                     </div>
@@ -174,6 +178,9 @@ class AddPet extends Component {
                                 <label>Imię:
                                 <input type='checkbox' checked={this.state.switchCheck} name='name' id='unknownName' value='unknown' onChange={this.switchCheckName}/>Nie znam <span>lub</span>
                                 <input type='text' name='name' placeholder='Wpisz imię' id="nameVal" disabled={this.state.disabled} onChange={this.handleInputChange}></input><br/>
+                            </label>
+                            <label>Wiek:
+                                <input type='text' name='age' id='age' onChange={this.handleInputChange}></input>
                             </label>
                             <label >Wzrost:
                                 <input type='radio' name='size' value="small" checked={this.state.selectedSizeOption === 'small'} onChange={this.handleRadioValue2}/>Do 30cm
