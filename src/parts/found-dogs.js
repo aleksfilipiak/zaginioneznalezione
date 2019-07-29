@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export default class FoundedDogs extends React.Component{
+export default class FoundDogs extends React.Component{
     constructor(props){
         super(props)
         this.state = {
             loading: true
         };
-        // this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/founded.json"
-        this.baseUrl = "http://localhost:3004/founded/"
+        // this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/dogs.json"
+        this.baseUrl = "http://localhost:3008/dogs/"
     }
     componentDidMount(){
         this.loadDogs()
@@ -38,14 +38,14 @@ export default class FoundedDogs extends React.Component{
 
         if (this.state.loading) return <h1>Ładuję dane</h1>
 
-        // const founded = this.state.data.founded.map((dog) => {
-            const founded = this.state.data.map((dog) => {
+        // const found = this.state.data.found.map((dog) => {
+            const found = this.state.data.map((dog) => {
             const photoIntoBckg = {
                 backgroundImage: `url(${dog.photo})`
             }
             return(
                 <li key={dog.id}>
-                    <Link to={{pathname: `founded/dog/${dog.id}`}}>
+                    <Link to={{pathname: `dogs-base/dog/${dog.id}`}}>
                         <h3>{dog.name}</h3>
                         <div className="dog-photo" style={photoIntoBckg}></div>
                     </Link>
@@ -54,7 +54,7 @@ export default class FoundedDogs extends React.Component{
         });
         return (
         <ul className='dogs-list'>
-            {founded}
+            {found}
         </ul>
         )
     }

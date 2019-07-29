@@ -7,7 +7,7 @@ class LostDog extends Component {
         this.state = {
             loading:true,
         }
-        this.baseUrl=`http://localhost:3004/founded`
+        this.baseUrl=`http://localhost:3008/dogs`
     }
     componentDidMount(){       
         this.loadDog(); 

@@ -116,7 +116,7 @@ lub
 
 - uruchom dwa serwery typu JSON. W tym celu otwórz dwa nowe okna terminalu i w każdym przejdź do folderu *public* ściągniętego repozytorium. Wpisz poniższe dwie komendy po jednej w każdym oknie:
 
-`json-server --watch founded.json --port 3004`
+`json-server --watch dogs.json --port 3008`
 
 `json-server --watch logins.json --port 3005`
 

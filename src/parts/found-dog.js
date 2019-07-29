@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class FoundedDog extends Component {
+class FoundDog extends Component {
     constructor(props){
         super(props);
         this.state = {
             loading:true
         }
-        this.baseUrl="http://localhost:3004/founded"
+        this.baseUrl="http://localhost:3008/dogs"
     }
     componentDidMount(){       
         this.loadDog();          
@@ -44,4 +44,4 @@ class FoundedDog extends Component {
     }
 }
 
-export default FoundedDog;
+export default FoundDog;

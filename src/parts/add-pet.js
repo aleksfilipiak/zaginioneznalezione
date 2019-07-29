@@ -89,13 +89,13 @@ class AddPet extends Component {
     //ADDING PET OBJECT
 
     addPet = () =>{
-        this.baseUrl = 'http://localhost:3004/founded'
+        this.baseUrl = 'http://localhost:3008/dogs'
         const example = {
             id: 0,
             lostOrFound: '',
             adopted: false,
             owner: this.state.owner,
-            info:{            
+                        
             latlng:{
                 lat: this.state.latlng.lat,
                 lng: this.state.latlng.lng
@@ -110,7 +110,7 @@ class AddPet extends Component {
             phone: this.state.phone,
             photo: this.state.photo,
             from: this.state.from
-            }
+           
         }
 
         fetch(this.baseUrl,{

@@ -7,8 +7,8 @@ export default class LostDogs extends React.Component{
         this.state = {
             loading: true
         };
-        // this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/founded.json"
-        this.baseUrl = "http://localhost:3004/founded/"
+        // this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/dogs.json"
+        this.baseUrl = "http://localhost:3008/dogs/"
     }
     componentDidMount(){
         this.loadDogs()
@@ -37,14 +37,14 @@ export default class LostDogs extends React.Component{
 
         if (this.state.loading) return <h1>Ładuję dane</h1>
 
-        // const founded = this.state.data.founded.map((dog) => {
-            const founded = this.state.data.map((dog) => {
+        // const found = this.state.data.found.map((dog) => {
+            const dogs = this.state.data.map((dog) => {
             const photoIntoBckg = {
                 backgroundImage: `url(${dog.photo})`
             }
             return(
                 <li key={dog.id}>
-                    <Link to={{pathname: `founded/dog/${dog.id}`}}>
+                    <Link to={{pathname: `dogs-base/dog/${dog.id}`}}>
                         {dog.name === 'unknown' ? <h3>Pies nr {dog.id}</h3> : <h3>{dog.name}</h3>}
                         <div className="dog-photo" style={photoIntoBckg}></div>
                     </Link>
@@ -53,7 +53,7 @@ export default class LostDogs extends React.Component{
         });
         return (
         <ul className='dogs-list'>
-            {founded}
+            {dogs}
         </ul>
         )
     }
