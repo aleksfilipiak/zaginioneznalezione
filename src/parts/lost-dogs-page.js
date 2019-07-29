@@ -7,11 +7,16 @@ class LostDogsPage extends Component {
     
 
     render() {
+
+        const location={
+            pathname: 'dodaj',
+            state: {from: this.props.location.pathname}
+        }
         return (
             <div className='dogs-page'>
                 <h1>Patrzysz na bazę zaginionych psów</h1>
                 <p>Nie ma tu psa którego znalazłeś? Dodaj go!</p>
-                <button className="pop-btn" id='add-pet'><Link to='dodaj'>Dodaj psa do bazy zaginionych</Link></button>
+                <button className="pop-btn" id='add-pet'><Link to={location}>Dodaj psa do bazy znalezionych</Link></button>
                 <LostDogs/>
             </div>
         );

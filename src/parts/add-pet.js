@@ -20,7 +20,8 @@ class AddPet extends Component {
             selectedSizeOption:'',
             extraInfo: '',
             selectedGenderOption: '',
-            photo: ''
+            photo: '',
+            from: this.props.location.state || false
             
         }
         this.mapRef = React.createRef();
@@ -82,7 +83,7 @@ class AddPet extends Component {
         }
         
     }
-
+    
    
 
     //ADDING PET OBJECT
@@ -107,7 +108,8 @@ class AddPet extends Component {
             extraInfo: this.state.extraInfo,
             email: this.state.email,
             phone: this.state.phone,
-            photo: this.state.photo
+            photo: this.state.photo,
+            from: this.state.from
             }
         }
 
