@@ -53,7 +53,7 @@ This app is running by react framework. It means that you can run it on your loc
 
 4. Now you should run two json servers, where app stores two databases. Run those lines in two new terminal windows and run them in folder *public* of this app:
 
-`json-server --watch founded.json --port 3004`
+`json-server --watch dogs.json --port 3008`
 
 `json-server --watch logins.json --port 3005`
 
