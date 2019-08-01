@@ -6,19 +6,18 @@ export default class LostDogs extends React.Component{
         super(props)
         this.state = {
             loading: true,
-            sortedDogs: []
+            filteredDogs: []
+
         };
         // this.baseUrl = "https://aleksfilipiak.github.io/zaginioneznalezione/dogs.json"
         this.baseUrl = "http://localhost:3008/dogs/"
     }
     componentDidMount(){
         this.loadDogs();
-        console.log(this.props)
     }
 
     componentDidUpdate(){
         console.log(this.props)
-        this.filterBase();
     }
     
 
@@ -42,35 +41,40 @@ export default class LostDogs extends React.Component{
         })
     }   
 
-    filterBase(){ //param = arrOfConditions=this.props
-        const dogsToFilter = [...this.state.data]
-        const sortedDogs=dogsToFilter.sort(function(a,b){
-            const dateA = new Date(a.time),
-            dateB = new Date(b.time)
-            return dateA-dateB
-        })
-        console.log(dogsToFilter)
-        return sortedDogs
-        // this.setState({
-        //     sortedDogs:sortedDogs
-        // })
-
-        // console.log(this.state.sortedDogs)
-
-    }
+    
     render(){
         
         if (this.state.loading) return <h1>Ładuję dane</h1>
-        const dogsToFilter = [...this.state.data]
-        const sortedDogs=dogsToFilter.sort(function(a,b){
+        const dogsToSort = [...this.state.data]
+        const sortedDogs=dogsToSort.sort(function(a,b){
             const dateA = new Date(a.time),
             dateB = new Date(b.time)
             return dateB-dateA
         })
         
         console.log(sortedDogs)
-      
-        const dogs = sortedDogs.map((dog) => {
+        
+        const conditionLost = document.getElementById('statusLost').value
+        const conditionFound = document.getElementById('statusFound').value
+        const filteredDogs = sortedDogs.filter(dog => {
+            if(this.props.filterNow && this.props.filterConditions[3] !=='')
+            {console.log(dog.name[1])
+             return dog.name === this.props.filterConditions[3].toLowerCase();}
+            // return dog.name.includes(this.props.filterConditions[3].toLowerCase())
+            if (this.props.filterNow && this.props.filterConditions[4] !== '') 
+            return dog.sex === this.props.filterConditions[4]
+            if (this.props.filterNow && this.props.filterConditions[0])
+            return dog.status === conditionLost
+            if (this.props.filterNow && this.props.filterConditions[1])
+            return dog.status === conditionFound
+            if (this.props.filterNow && this.props.filterConditions[2] !== '')
+            return new Date(dog.time) >= new Date(this.props.filterConditions[2])
+             else return dog.name
+         })
+
+         console.log(filteredDogs)
+                
+        const dogs = filteredDogs.map((dog) => {
 
             const photoIntoBckg = {
                 backgroundImage: `url(${dog.photo})`

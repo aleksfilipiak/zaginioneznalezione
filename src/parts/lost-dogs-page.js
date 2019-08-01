@@ -7,7 +7,11 @@ class LostDogsPage extends Component {
         super(props)
         this.state={
             dateFilter:'',
-            filterNow: false
+            filterNow: false,
+            dogName:'',
+            dogSex: '',
+            statusLost: false,
+            statusFound:false
         }
     }
     handleInputChange =(event) =>{
@@ -15,13 +19,23 @@ class LostDogsPage extends Component {
             [event.currentTarget.id]: event.currentTarget.value
         })
     }    
-
-    filterBase = () =>{
-        if (this.state.dateFilter !== ''){
+    switchStatusFound=()=>{
         this.setState({
-            filterNow: true
+            statusFound: !this.state.statusFound
         })
     }
+    switchStatusLost=()=>{
+        this.setState({
+            statusLost: !this.state.statusLost
+        })
+    }
+    filterBase = (e) =>{
+               
+        this.setState({
+            filterNow: !this.state.filterNow
+        })
+         e.preventDefault();
+
     }    
     render() {
 
@@ -33,18 +47,31 @@ class LostDogsPage extends Component {
             <div className='dogs-page'>
                 <h1>Patrzysz na bazę zaginionych psów</h1>
                 <p>Filtruj</p>
-                <form>
+                <form id='filterForm' onSubmit={this.filterBase}>
+                    <label>Status:
+                        <input type='checkbox' id='statusLost' name='status' value='lost' checked={this.state.statusLost} onChange={this.switchStatusLost}/>Zaginione
+                        <input type='checkbox' id='statusFound' name='status' value='found' checked={this.state.statusFound} onChange={this.switchStatusFound}/>Znalezione
+                    </label>
                     <label>Po dacie: 
                         <input type='datetime-local' onChange={this.handleInputChange} value={this.state.dateFilter} id='dateFilter'/>
                     </label>
-                    <label>
-                        {/* <input type='submit' value="Filtruj" onSubmit={this.filterBase}  /> */}
+                    <label>Po imieniu:
+                        <input type='text' id='dogName' onChange={this.handleInputChange} placeholder='Imię'/>
                     </label>
-                    <button onClick={this.filterBase}>Filtruj</button>
+                    <label>Po płci:
+                        <select name='dogSex' id='dogSex' value={this.state.dogSex} onChange={this.handleInputChange}>
+                            <option value='unknown'>Nie wiadomo</option>
+                            <option value='female'>Samica</option>
+                            <option value='male'>Samiec</option>
+                        </select>
+                    </label>
+                    {this.state.filterNow ? <input type='submit' value='Resetuj filtry'/> : <input type='submit' value='Filtruj'/>}
                 </form>
                 <p>Nie ma tu psa którego znalazłeś? Dodaj go!</p>
                 <button className="pop-btn" id='add-pet'><Link to={location}>Dodaj psa do bazy znalezionych</Link></button>
-                <LostDogs dateFilter={this.state.dateFilter} filterNow={this.state.filterNow}/>
+                <LostDogs 
+                filterNow={this.state.filterNow} 
+                filterConditions={[this.state.statusFound, this.state.statusLost, this.state.dateFilter, this.state.dogName, this.state.dogSex]}/>
             </div>
         );
     }
