@@ -45,7 +45,7 @@ class LostDogsPage extends Component {
         }
         return (
             <div className='dogs-page'>
-                <h1>Patrzysz na bazę zaginionych psów</h1>
+                {this.props.match.params === 'lost' ? <h1>Patrzysz na bazę zaginionych psów</h1> : <h1>Patrzysz na bazę znalezionych psów</h1>}
                 <p>Filtruj</p>
                 <form id='filterForm' onSubmit={this.filterBase}>
                     <label>Status:

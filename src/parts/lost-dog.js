@@ -31,14 +31,7 @@ class LostDog extends Component {
         });
     }
     
-    // componentWillReceiveProps(nextProps){
-    //     if(nextProps.location !== this.props.location){
-    //         this.setState({
-    //             prevPath:this.props.location
-    //         })
-    //         console.log(this.state.prevPath)
-    //     }
-    // }
+
 
     rescued = ()=>{
         const id = this.props.match.params.id

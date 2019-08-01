@@ -14,7 +14,7 @@ export default class Found extends React.Component{
                 <div className="first-step extra-padding">
                     <h1>Sprawdź bazę</h1>
                     <p>Być może już ktoś dodał do niej tego psa. Sprawdź za pomocą mapy czy ten pies wcześniej był w zaginionych</p>
-                    <button className='pop-btn'><Link to="/baza-zaginionych">Szukaj wśród zaginionych</Link></button>
+                    <button className='pop-btn'><Link to={{pathname: `/base/lost`}}>Szukaj wśród zaginionych</Link></button>
                 </div>
             </div>
         )
