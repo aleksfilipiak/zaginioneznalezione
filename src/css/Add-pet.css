@@ -2,7 +2,7 @@
     width: 75%;
     margin: auto;    
 }
-.add-pet h1{
+.add-pet h1, h3{
     color: white;
     text-align: center;
 }

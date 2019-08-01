@@ -17,7 +17,7 @@ class Registration extends Component {
         const newUser ={
             login:this.state.newLogin,
             email:this.state.newEmail,
-            pass:this.state.newEmail
+            pass:this.state.newPass
         };
         fetch(this.baseUrl,{
             method: 'POST',

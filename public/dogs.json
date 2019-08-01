@@ -4,7 +4,7 @@
       "id": 1,
       "time": "2019-07-30T13:00",
       "author": "magda",
-      "status" : "lost",
+      "status": "lost",
       "adopted": false,
       "name": "puszek",
       "age": 15,
@@ -30,7 +30,7 @@
       "id": 2,
       "time": "2019-07-24T13:00",
       "author": "konrad",
-      "status" : "found",
+      "status": "found",
       "adopted": false,
       "name": "misia",
       "age": 3,
@@ -55,13 +55,13 @@
       "adopted": true,
       "time": "2019-07-25T12:00",
       "id": 3,
-      "status" : "lost"
+      "status": "lost"
     },
     {
       "id": 4,
       "author": "magda",
       "adopted": true,
-      "status" : "found",
+      "status": "found",
       "name": "puszek",
       "age": 15,
       "sex": "male",
@@ -86,7 +86,7 @@
     {
       "id": 5,
       "author": "konrad",
-      "status" : "lost",
+      "status": "lost",
       "time": "2019-07-22T13:00",
       "adopted": false,
       "name": "misia",
@@ -112,7 +112,7 @@
       "id": 6,
       "time": "2019-06-25T13:00",
       "author": "aśka",
-      "status" : "found",
+      "status": "found",
       "name": "kruszynka",
       "adopted": false,
       "age": 1,
@@ -136,7 +136,7 @@
     {
       "id": 7,
       "adopted": false,
-      "status" : "found",
+      "status": "found",
       "latlng": {
         "lat": 52.4002888,
         "lng": 17.060211499999998
@@ -154,7 +154,7 @@
     {
       "id": 8,
       "lostOrFound": "",
-      "status" : "lost",
+      "status": "lost",
       "adopted": false,
       "owner": "unknown",
       "latlng": {
@@ -171,6 +171,58 @@
       "from": {
         "from": "/baza-zaginionych"
       }
+    },
+    {
+      "id": 9,
+      "lostOrFound": "",
+      "adopted": false,
+      "author": "Ola",
+      "latlng": {
+        "lat": 52.405073,
+        "lng": 17.052509
+      },
+      "time": "",
+      "name": "",
+      "age": "",
+      "height": "",
+      "sex": "",
+      "extraInfo": "",
+      "photo": "",
+      "from": false
+    },
+    {
+      "id": 10,
+      "lostOrFound": "",
+      "adopted": false,
+      "latlng": {
+        "lat": 52.405073,
+        "lng": 17.052509
+      },
+      "time": "",
+      "name": "",
+      "age": "",
+      "height": "",
+      "sex": "",
+      "extraInfo": "",
+      "photo": "",
+      "from": false
+    },
+    {
+      "id": 11,
+      "lostOrFound": "",
+      "adopted": false,
+      "latlng": {
+        "lat": 52.405073,
+        "lng": 17.052509
+      },
+      "time": "",
+      "name": "",
+      "age": "",
+      "height": "",
+      "sex": "",
+      "extraInfo": "",
+      "photo": "",
+      "from": false
     }
   ]
 }

@@ -33,13 +33,12 @@ class LoginWithCookie extends Component {
                 data
             })
             //checking is that email already in base
-            // const existingUserArr = this.state.data.logins.filter((user)=>{
             const existingUserArr = this.state.data.filter((user)=>{
                 return (user.email === `${this.state.email}`) 
             })
             
-            
-            if(existingUserArr.length === 0)
+            //checking if user exist
+            if(existingUserArr.length === 0 || this.state.email==='')
                 {this.setState({
                     noSuchUser:true
                 })                
@@ -75,6 +74,8 @@ class LoginWithCookie extends Component {
             cookieLoginEmail:cookies.get('email', {path: '/'}),
             cookieLogin:cookies.get('login', {path: '/'})
         });
+
+        
       console.log(this.state.cookieLogin)
     }
     render() {

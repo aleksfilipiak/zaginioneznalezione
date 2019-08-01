@@ -71,6 +71,12 @@
       "email": "email@pl",
       "pass": "email@pl",
       "id": 12
+    },
+    {
+      "login": "Ola",
+      "email": "ola@ola",
+      "pass": "kikut",
+      "id": 13
     }
   ]
 }

@@ -71,7 +71,7 @@
     transition: all 0.2s ease-out;
 }
 
-#sign-up-btn::before{
+#sign-up-btn:hover::before{
     animation: shine 0.5s 0s linear;
 }
 

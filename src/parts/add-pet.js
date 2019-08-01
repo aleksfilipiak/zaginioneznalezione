@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
+import Cookies from 'universal-cookie';
 
 class AddPet extends Component {
     constructor(props){
         super(props)
         this.state={
             lostOrFound: '',
-            owner: 'unknown',
+            author: undefined,
             hasLocation: false,
             latlng:{
                 lat: 52.405073,
@@ -21,8 +22,7 @@ class AddPet extends Component {
             extraInfo: '',
             selectedGenderOption: '',
             photo: '',
-            from: this.props.location.state || false
-            
+            // from: this.props.location.state || false
         }
         this.mapRef = React.createRef();
     }
@@ -84,7 +84,15 @@ class AddPet extends Component {
         
     }
     
-   
+    //CHECKING IF LOGGED
+
+    componentDidMount(){
+        const cookies = new Cookies();
+        this.setState({
+            author:cookies.get('login', {path: '/'})
+        });
+    }
+    
 
     //ADDING PET OBJECT
 
@@ -94,7 +102,7 @@ class AddPet extends Component {
             id: 0,
             lostOrFound: '',
             adopted: false,
-            owner: this.state.owner,
+            author: this.state.author,
                         
             latlng:{
                 lat: this.state.latlng.lat,
@@ -131,6 +139,7 @@ class AddPet extends Component {
     }
 
    
+   
     //RENDER
 
 
@@ -143,6 +152,7 @@ class AddPet extends Component {
         return (
             <div className='add-pet'>                
                <h1>Dodaj zwierzę</h1> 
+               {this.state.author === undefined ? <h3>Musisz być zalogowany, żeby dodać zwierzę</h3>: ''}
                <form>
                    <div className='add-photo-holder '>
                         <div className='add-photo'></div>
@@ -206,7 +216,7 @@ class AddPet extends Component {
                       E-mail<input type='text' name='contact' id='email' placeholder='Podaj e-mail' onChange={this.handleInputChange}/><br/>
                         </label>
                     </div>
-                    <input name='submit' type='submit' value='Dodaj' onClick={this.addPet}></input>
+                    <input name='submit' type='submit' value='Dodaj' disabled={this.state.author === undefined} onClick={this.addPet}></input>
                </form>
             </div>
         );

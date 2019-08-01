@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import LostDogs from "./lost-dogs";
 import {Link} from 'react-router-dom';
+import AddPet from './add-pet';
+
 
 class LostDogsPage extends Component {
     constructor(props){
@@ -38,7 +40,8 @@ class LostDogsPage extends Component {
 
     }    
     render() {
-
+        if (this.props.match.params.status ==='dodaj') return <AddPet/>
+        
         const location={
             pathname: 'dodaj',
             state: {from: this.props.location.pathname}
@@ -68,7 +71,9 @@ class LostDogsPage extends Component {
                     {this.state.filterNow ? <input type='submit' value='Resetuj filtry'/> : <input type='submit' value='Filtruj'/>}
                 </form>
                 <p>Nie ma tu psa którego znalazłeś? Dodaj go!</p>
-                <button className="pop-btn" id='add-pet'><Link to={location}>Dodaj psa do bazy znalezionych</Link></button>
+                <button className="pop-btn" id='add-pet'>
+                    <Link to={location}>Dodaj psa do bazy znalezionych</Link>
+                </button>
                 <LostDogs 
                 filterNow={this.state.filterNow} 
                 filterConditions={[this.state.statusFound, this.state.statusLost, this.state.dateFilter, this.state.dogName, this.state.dogSex]}/>

@@ -32,7 +32,7 @@ function App() {
      <Route path="/found" component={Found}></Route>
      <Route path="/base/:status" component={LostDogsPage}></Route>
      <Route path="/dogs-base/dog/:id" component={LostDog}></Route>
-     <Route path="/dodaj" component={AddPet}></Route>
+     <Route path="/base/dodaj" component={AddPet}></Route>
      <Route path="/registration" component={Registration}/>
      <Route path="/login" component={Login}/>
      <Footer/>
